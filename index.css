@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+
+#page-wrapper{
+    width:80vw;
+    margin:auto;
+    background-color:#F5C949;
+
+    font-family: "Inter", Arial, sans-serif;
+    font-size: calc(0.9rem + 0.2vw);
+    line-height: 1.55;
+
+    display:flex;
+    flex-direction:column;
+}
+
+header{
+    text-align:center;
+    background-color:#C97D0A;
+    padding:1rem;
+}
+
+#nav-wrapper{
+    width:100%;
+    background-color:#F29307;
+}
+
+#nav-wrapper nav ul{
+    list-style:none;
+    padding:1rem;
+    margin:0;
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.75rem;
+    justify-content:center;
+}
+
+#nav-wrapper nav ul li{
+    background-color:#F0B865;
+    text-align:center;
+    width:fit-content;
+}
+
+#nav-wrapper nav ul li a{
+    display:block;
+    padding:0.6rem 1rem;
+    text-decoration:none;
+}
+
+/* ================= MAIN ================= */
+
+main{
+    min-height:100vh;
+    width:100%;
+    padding:1.5rem;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    text-align:center;
+    background-color:#C97D0A;
+    padding:1rem;
+}
+
+/* ================================================= */
+/* ================= LARGE SCREEN ================== */
+/* ================================================= */
+
+@media (min-width:750px){
+
+    #page-wrapper{
+        display:grid;
+        grid-template-columns:30% 1fr;
+        grid-template-areas:
+            "header header"
+            "nav    main"
+            "footer footer";
+    }
+
+    header{
+        grid-area:header;
+        text-align:left;
+    }
+
+    #nav-wrapper{
+        grid-area:nav;
+        /* 这里不需要高度设置，
+           grid 会自动让它和 main 等高 */
+    }
+
+    main{
+        grid-area:main;
+    }
+
+    footer{
+        grid-area:footer;
+        text-align:left;
+    }
+
+    /* 垂直菜单 */
+    #nav-wrapper nav ul{
+        flex-direction:column;
+        align-items:stretch;
+        justify-content:flex-start;
+    }
+
+    #nav-wrapper nav ul li{
+        width:100%;
+    }
+}
+
+/* ================= 1000px RULE ================= */
+
+@media (min-width:1000px){
+    main{
+        max-width:70%;
+    }
+}
+
+/* ================= IMAGE ================= */
+
+img{
+    width:50%;
+    display:block;
+    margin:auto;
+}
