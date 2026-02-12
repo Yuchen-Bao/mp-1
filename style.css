@@ -53,11 +53,34 @@ header{
 }
 
 
-
+/* --------------------------main part ----------------*/
 main{
     min-height:125vh;
     width:100%;
     padding:1.5rem;
+}
+
+main ul{
+    list-style:square;
+}
+
+main ul li{
+    margin:25% 10%;
+}
+
+main h3{
+    padding-top:5vh;
+}
+
+main table{
+    padding:3vw 10vh;
+    background-color: orange;
+    border-style:solid;
+    border-color:black;
+    border-width:calc(1px + 0.1rem);
+
+
+    text-align:center;
 }
 
 
@@ -70,7 +93,7 @@ footer{
 
 
 
-/* if width>=750px */
+/* -------------------if width>=750px----------------------------------- */
 
 @media (min-width:750px){
 

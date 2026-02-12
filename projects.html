@@ -3,28 +3,57 @@
 <head>
     <meta charset="UTF-8"/>
     <title> Projects | Resume</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 <body>
-<header>
-    <h1>Yuchen Bao</h1>
-    <p>Yuchen Bao's Projects</p>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="experiences.html">Experiences</a></li>
-            <li><a href="references.html">References</a></li>
-        </ul>
-    </nav>
+<div id="page-wrapper">
+    <header>
+        <h1>Yuchen Bao</h1>
+        <p>Yuchen Bao's Online Resume</p>
+    </header>
+    <div id="nav-wrapper">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experiences.html">Experiences</a></li>
+                <li><a href="references.html">References</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
-
+        <h2>Calculator</h2>
+        <div id="calculator">
+                <div id="factor1">
+                    <label for="first-number">First Number</label>
+                    <br>
+                    <input type="text" id="first-number">
+                </div>
+                <div id="factor2">
+                    <label for="second-number">Second Number</label>
+                    <br>
+                    <input type="text" id="second-number">
+                </div>
+                <img src="/src/calculator.png" alt="calculator" id="calculator-img">
+            <div id="operators">
+                <button onclick="plus()">+</button>
+                <button onclick="minus()">-</button>
+                <button onclick="multiply()">×</button>
+                <button onclick="divide()">÷</button>
+                <button onclick="pow()">**</button>
+                <button onclick="clearAll()">Clear All</button>
+            </div>
+            <h3 id="output">0</h3>
+        </div>
     </main>
-</header>
-<footer>
-
-</footer>
+    <footer>
+        <p>All rights reserved by Yuchen Bao <a href="references.html">Credits</a>&#169</p>
+    </footer>
+    <script src=index.js></script>
+</div>
 </body>
+
 </html>
+
