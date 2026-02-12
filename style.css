@@ -73,7 +73,8 @@ main h3{
 }
 
 main table{
-    padding:3vw 10vh;
+    width: 100%;
+    max-width: 80%;
     background-color: orange;
     border-style:solid;
     border-color:black;
@@ -140,6 +141,7 @@ footer{
 @media (min-width:1000px){
     main{
         max-width:70%;
+        margin:0 auto;
     }
 }
 
